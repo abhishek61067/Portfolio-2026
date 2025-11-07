@@ -1,3 +1,5 @@
+A modern authentication and authorization with featuers including refresh tokens, protected routes, role based access control and oauth social logins built for enterprise level integration.
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
