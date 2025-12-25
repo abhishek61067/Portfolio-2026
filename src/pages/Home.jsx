@@ -30,7 +30,7 @@ const Home = () => {
               Abhishek
             </Text>{" "}
             👋
-            <br />I build modern web apps
+            <br />I build modern scalable and performant web applications.
           </Heading>
 
           <Text fontSize="lg" color="gray.300">
