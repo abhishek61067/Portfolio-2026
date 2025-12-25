@@ -1,44 +1,79 @@
-import { Box, Button, Heading, Image, Stack, Text } from "@chakra-ui/react";
+import { Box, Button, Heading, Stack, Text, VStack } from "@chakra-ui/react";
 import { Link } from "react-router";
+import Skills from "./../components/Skills";
+import Experience from "./../components/Experience";
 
-const Home = () => (
-  <Box
-    display="flex"
-    flexDirection="column"
-    alignItems="center"
-    justifyContent="center"
-    px={4}
-    py={12}
-    textAlign="center"
-    w={"100vw"}
-  >
-    <Heading as="h1" size="3xl" mb={4} color="cyan.300" shadow="xl">
-      Authentication and Authorization with JWT
-    </Heading>
+const Home = () => {
+  return (
+    <Box color="white" py={10}>
+      {/* HERO SECTION */}
+      <Box
+        display="flex"
+        alignItems="center"
+        justifyContent="center"
+        px={6}
+        textAlign="center"
+      >
+        <Stack spacing={6} maxW="800px">
+          <Text
+            fontSize="sm"
+            fontWeight="600"
+            color="cyan.300"
+            letterSpacing="wide"
+          >
+            MID-SENIOR FRONTEND DEVELOPER
+          </Text>
 
-    <Text fontSize="lg" mb={6} maxW="600px" color="gray.300">
-      Learn how to securely manage user sessions with JWT
-    </Text>
+          <Heading size="3xl" lineHeight="1.2">
+            Hi, I’m{" "}
+            <Text as="span" color="cyan.300">
+              Abhishek
+            </Text>{" "}
+            👋
+            <br />I build modern web apps
+          </Heading>
 
-    <Stack spacing={4} mt={16} mb={16}>
-      <Text fontWeight="normal" color="gray.200">
-        🔐 Secure Login System
-      </Text>
-      <Text fontWeight="normal" color="cyan.200">
-        🔁 Refresh Token Flow
-      </Text>
-      <Text fontWeight="normal" color="gray.500">
-        🛡️ Protected Routes & RBAC
-      </Text>
-    </Stack>
+          <Text fontSize="lg" color="gray.300">
+            Frontend developer with 3.5+ years of experience building real-world
+            products including e-commerce platforms, stock market dashboards,
+            real-time applications, and SaaS products. Lets discuss on
+            opportunities and lets build something great together. I am free for
+            discussions now.
+          </Text>
 
-    <Button as={Link} to="/login" colorScheme="cyan" size="lg" shadow="md">
-      Get Started
-    </Button>
+          <Stack
+            direction={{ base: "column", sm: "row" }}
+            spacing={4}
+            justify="center"
+          >
+            <Button as={Link} to="/projects" colorScheme="cyan" size="lg">
+              View Projects
+            </Button>
 
-    {/* Optional image below */}
-    {/* <Image src="/jwt-diagram.png" alt="JWT Flow" mt={10} borderRadius="lg" /> */}
-  </Box>
-);
+            <Button
+              as={Link}
+              to="/contact"
+              variant="outline"
+              colorScheme="cyan"
+              size="lg"
+            >
+              Contact Me
+            </Button>
+          </Stack>
+        </Stack>
+      </Box>
+
+      {/* SKILLS SECTION */}
+      <Box py={20}>
+        <Skills />
+      </Box>
+
+      {/* EXPERIENCE SECTION */}
+      <Box>
+        <Experience />
+      </Box>
+    </Box>
+  );
+};
 
 export default Home;
