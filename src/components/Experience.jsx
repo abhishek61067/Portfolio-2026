@@ -7,7 +7,7 @@ export const experienceData = [
     company: "Botsfolio",
     period: "Aug 2025 – Present",
     description:
-      "Leading frontend development including design decisions and implementation for a crypto-investment SaaS platform. Built real-time dashboards, AutoCopy systems and multiple core features and scalable UI architecture. Optimized performance of legacy codebase and fixed legacy issues to improve user experience and product cost. Owned frontend architecture, performance optimization, and API integration while collaborating closely with 2 backend teams as a Solo Frontend Dev handling design decisions.",
+      "Led frontend development for a crypto-investment SaaS platform, driving design decisions, implementation, and scalable UI architecture. Built real-time dashboards, AutoCopy systems, and core features. Optimized legacy code for performance and cost, managed API integrations, and ensured quality as a solo frontend developer collaborating with two backend teams.",
   },
   {
     role: "Mid level Frontend Developer",
